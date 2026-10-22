@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2 align="center">User Registration Form</h2>
+
+    <!-- Form Container -->
+    <div style="width: 450px; margin: 0 auto; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+        <form action="submit.html" method="POST">
+            
+            <!-- Full Name -->
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required style="width: 100%;">
+            </p>
+
+            <!-- Email Address -->
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required style="width: 100%;">
+            </p>
+
+            <!-- Contact Number -->
+            <p>
+                <label for="phone">Contact Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit number" pattern="[0-9]{10}" required style="width: 100%;">
+            </p>
+
+            <!-- Gender Selection -->
+            <p>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </p>
+
+            <!-- Address -->
+            <p>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="4" placeholder="Enter your address" required style="width: 100%;"></textarea>
+            </p>
+
+            <!-- Submit and Reset Buttons -->
+            <p align="center">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </p>
+
+        </form>
+    </div>
+
+</body>
+</html>
