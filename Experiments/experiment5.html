@@ -1,63 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Student Registration Form</title>
 </head>
 <body>
 
-    <h2 align="center">User Registration Form</h2>
+    <h2 align="center">Student Registration Form</h2>
+    <hr>
 
-    <!-- Form Container -->
-    <div style="width: 450px; margin: 0 auto; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
-        <form action="submit.html" method="POST">
-            
-            <!-- Full Name -->
-            <p>
-                <label for="fullname">Full Name:</label><br>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required style="width: 100%;">
-            </p>
+    <form action="submit.html" method="post">
+        <!-- Full Name -->
+        <p>
+            <label>Full Name:</label> 
+            <input type="text" name="fullname" placeholder="Enter your full name" required>
+        </p>
 
-            <!-- Email Address -->
-            <p>
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" placeholder="example@domain.com" required style="width: 100%;">
-            </p>
+        <!-- Email -->
+        <p>
+            <label>Email:</label> 
+            <input type="email" name="email" placeholder="Enter valid email address" required>
+        </p>
 
-            <!-- Contact Number -->
-            <p>
-                <label for="phone">Contact Number:</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit number" pattern="[0-9]{10}" required style="width: 100%;">
-            </p>
+        <!-- Password -->
+        <p>
+            <label>Password:</label> 
+            <input type="password" name="password" placeholder="Enter password" required>
+        </p>
 
-            <!-- Gender Selection -->
-            <p>
-                <label>Gender:</label><br>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
-                
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-                
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-            </p>
+        <!-- Gender -->
+        <p>
+            <label>Gender:</label> 
+            <input type="radio" name="gender" value="male"> Male 
+            <input type="radio" name="gender" value="female"> Female 
+            <input type="radio" name="gender" value="other"> Other
+        </p>
 
-            <!-- Address -->
-            <p>
-                <label for="address">Address:</label><br>
-                <textarea id="address" name="address" rows="4" placeholder="Enter your address" required style="width: 100%;"></textarea>
-            </p>
+        <!-- Course Selection -->
+        <p>
+            <label>Course:</label>
+            <select name="course">
+                <option value="">-- Select Course --</option>
+                <option value="btech">B.Tech</option>
+                <option value="mtech">M.Tech</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+            </select>
+        </p>
 
-            <!-- Submit and Reset Buttons -->
-            <p align="center">
-                <input type="submit" value="Register">
-                <input type="reset" value="Clear">
-            </p>
+        <!-- Contact No -->
+        <p>
+            <label>Contact No:</label> 
+            <input type="tel" name="contact" placeholder="Enter phone number" required>
+        </p>
 
-        </form>
-    </div>
+        <!-- Address -->
+        <p>
+            <label>Address:</label><br>
+            <textarea name="address" rows="4" cols="40" placeholder="Enter your address" required></textarea>
+        </p>
+
+        <!-- Submit and Reset Buttons -->
+        <p>
+            <input type="submit" value="Register"> 
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+
+    <hr>
+    <p align="center">&copy; 2025 Student Registration Portal</p>
 
 </body>
 </html>
