@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Accessible Page</title>
+<style>
+  body { font-family:Arial,sans-serif; line-height:1.6; }
+  a:focus, input:focus { outline:3px solid orange; }
+  .skip { position:absolute; left:-9999px; }
+  .skip:focus { left:10px; top:10px; background:white; padding:8px; }
+</style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header><a href="#home">Home</a> | <a href="#main">Help</a></header>
+  <main id="main">
+    <h1>Accessible Page</h1>
+    <img src="https://via.placeholder.com/120x70?text=Icon" alt="Blue information icon">
+    <form role="search" aria-label="Site search">
+      <label for="search">Search:</label>
+      <input id="search" name="q" type="search">
+    </form>
+  </main>
+</body>
+</html>
